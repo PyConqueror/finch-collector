@@ -1,0 +1,63 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.nav-wrapper {
+    background-color: #102027; 
+    padding: 0 20px; 
+  }
+  
+.brand-logo {
+    color: #cfd8dc; 
+    font-weight: bold;
+    font-size: 1.5rem; 
+  }
+  
+.container {
+    background-color: #fff; 
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); /* Soft shadow for depth */
+    border-radius: 8px; 
+  }
+  
+.page-footer {
+    background-color: #102027; 
+    color: #cfd8dc;
+    padding: 10px 20px; 
+  }
+  
+.page-footer .right {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.card {
+    background-color: lightgray; 
+    margin: 10px 0; 
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 20px; 
+  }
+  
+  .card-title {
+    color: #102027;
+    font-size: 1.4rem; 
+    margin-bottom: 10px; 
+  }
+  
