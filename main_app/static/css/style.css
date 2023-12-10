@@ -14,7 +14,7 @@ main {
 
 
 .nav-wrapper {
-    background-color: rgb(29, 51, 63); 
+    background: linear-gradient(to right, #ff5f6d, #ffc371); /* Example gradient */
     padding: 0 20px; 
   }
   
@@ -33,7 +33,7 @@ main {
   }
   
 .page-footer {
-    background-color: rgb(29, 51, 63); 
+    background: linear-gradient(to right, #36d1dc, #5b86e5); /* Example gradient */
     color: white;
     padding: 10px 20px; 
   }
@@ -44,21 +44,56 @@ main {
 }
 
 .card {
-    background-color: lightgray; 
-    margin: 10px 0; 
-    border: 1px solid black;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    border-radius: 15px;
+    background-color: white; 
+    margin: 30px auto; 
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); 
+    border-radius: 20px; 
     overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-  
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12); 
+}
+
 .card-content {
     padding: 20px; 
+    position: relative;
 }
-  
+
+.card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    margin: -20px; 
+    border-radius: inherit; 
+    background: linear-gradient(to right, #ff5f6d, #ffc371); 
+    opacity: 0.1;
+}
+
 .card-title {
-    color: black;
-    font-size: 1.4rem; 
-    margin-bottom: 10px; 
+    font-size: 1.6rem; 
+    font-weight: 500;
+    color: #37474f; 
+    position: relative; 
+    z-index: 1;
 }
-  
+
+.card-content p {
+    color: #37474f; 
+    position: relative; 
+    z-index: 1;
+    line-height: 1.6; 
+    margin-bottom: 0.75rem;
+}
+
+.card-content:hover::before {
+    opacity: 0.3; 
+}
+
