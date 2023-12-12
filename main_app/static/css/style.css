@@ -31,7 +31,7 @@ main {
   }
   
 .page-footer {
-    background: linear-gradient(to right, #36d1dc, #5b86e5); /* Example gradient */
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
     color: white;
     padding: 10px 20px; 
   }
@@ -125,17 +125,42 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     transform: scale(1.05);
 }
 
+button {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);; 
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    display: block;
+    width: 100%; 
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    opacity: 0.9; 
+    transform: scale(1.05);
+}
+
 .datepicker-modal {
-    background-image:linear-gradient(to right, #ff5f6d, #ffc371);
+    background-image:linear-gradient(to right, #36d1dc, #5b86e5);;
     border-radius: 25px ;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3) ;
     padding: 10px;
+    color: black;
 }
 
 .datepicker-date-display {
     background-color: #44868b;
     color: white;
     border-radius: 25px;
+}
+
+.datepicker-cancel, 
+.datepicker-done {
+    color: black;
 }
 
 .datepicker-cancel:hover, 
